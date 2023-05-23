@@ -1,6 +1,6 @@
 # FiatStiloConnectNavOAP
 
-Integrate Raspberry Pi with MCP2515 module into Fiat Stilo's CANbus network for enhanced connectivity and control. Use at your own risk!
+Raspberry Pi with MCP2515 module running OpenAutoPro intergrate into Fiat Stilo's CANbus network for oem functionality. Use at your own risk!
 
 ## FiatStiloBackendApp
 Node.js server that communicates with the Fiat Stilo's CAN network and sends websockets to the FiatStiloFrontendApp.
