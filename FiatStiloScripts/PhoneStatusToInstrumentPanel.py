@@ -114,7 +114,7 @@ data = {
 
 def splitnameorphone(input):
     for i in range(0, len(input)):
-        char_variable = "char" + str(i)
+        char_variable = "char" + str(i+1)
         
         if i <= len(input):
             char_value = dictionary[input[i].upper()]
