@@ -24,9 +24,9 @@ def listen_for_events(client):
         if(msg.arbitration_id == 0x380):
 
             #Reverse status
-            if((msg.data[1] & 0b00000001) == 1):
+            if((msg.data[2] & 0b00000100) == 4):
                 _reverse_gear_engaged = True
-            if((msg.data[1] & 0b00000001) == 0):
+            if((msg.data[2] & 0b00000100) == 0):
                 _reverse_gear_engaged = False
                         #Reverse status
             set_reverse_gear_status = oap_api.SetReverseGearStatus()
